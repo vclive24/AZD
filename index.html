@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auto Open URL and QR Code</title>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@latest"></script>
+</head>
+<body>
+  <h1>Auto Open URL and QR Code</h1>
+
+  <div id="qrcode"></div>
+
+  <script>
+    var url = "https://wabqrd.datlngllfe.net?utm_source=da57dc555e50572d&s1=191824&s2=1844793&j1=1"; // Replace with your desired URL
+
+    var qrCode = new QRCode(document.getElementById("qrcode"), {
+      text: url,
+      width: 128,
+      height: 128
+    });
+
+    window.open(url);
+  </script>
+</body>
+</html>
